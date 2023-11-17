@@ -31,23 +31,23 @@ def create_playlist(name, description, tracks):
 
 # Main function
 def main():
-    # Define your noise core genre (you can change it to match your preferences)
-    noise_core_genre = 'noise%rock'
+    #ANCHOR Define your genre (you can change it to match your preferences)
+    genre = 'noise%rock'
 
     # Search for noise core tracks
-    noise_core_tracks = search_tracks_by_genre(noise_core_genre)
+    tracks = search_tracks_by_genre(genre)
 
-    if not noise_core_tracks:
-        print(f"No {noise_core_genre} tracks found.")
+    if not tracks:
+        print(f"No {genre} tracks found.")
         return
 
     # Shuffle the tracks to add variety
-    random.shuffle(noise_core_tracks)
+    random.shuffle(tracks)
 
     # Create a playlist with the noise core tracks
     playlist_name = 'Noise Core Playlist'
     playlist_description = 'A playlist of noise core songs generated with Spotipy.'
-    create_playlist(playlist_name, playlist_description, noise_core_tracks)
+    create_playlist(playlist_name, playlist_description, tracks)
 
     print(f"Playlist '{playlist_name}' created successfully.")
 

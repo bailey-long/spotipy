@@ -3,7 +3,9 @@ Messing around with the spotify python library
 
 ## To run  
 Install Virtual Environment:  
-- ctr + shift + p and select "Python: Create Environment"  
+- python -m venv venv  
 
 Run Virtual Environment  
-- then select the interpreter "Python: Select Interpreter"
+- source venv/scripts/activate  
+
+Get into it!
